@@ -1,0 +1,553 @@
+@media (min-width: 320px) and (max-width: 575px) {
+    .ManiHeader .navbar {
+        padding: 10px 0px 10px 0;
+    }
+
+    .NavLogo img {
+        max-height: 50px !important;
+    }
+
+    .BackToTop {
+        right: 10px;
+        bottom: 10px;
+    }
+
+        .BackToTop a {
+            height: 40px;
+            width: 40px;
+            line-height: 1.5;
+        }
+
+    .AboutUs img {
+        min-height: 400px;
+    }
+
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        animation-play-state: paused;
+    }
+
+    .d-xs-none {
+        display: none;
+    }
+
+    .logo-container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .SliderContainer .carousel-control-prev, .SliderContainer .carousel-control-next {
+        height: 30px;
+        width: 30px;
+        display: none;
+    }
+
+        .SliderContainer .carousel-control-prev i, .SliderContainer .carousel-control-next i {
+            font-size: 18px;
+        }
+
+    .SliderContainer .carousel-item img {
+        max-height: 400px !important;
+    }
+
+    .butnSecton .blackBtn, .NewsLetterForm .FormButton {
+        padding: 15px 15px;
+    }
+
+    .NewsLetterForm .FormButton {
+        position: inherit;
+        transform: translateY(0%);
+    }
+
+    .SocialMediaHandler {
+        justify-content: space-around;
+    }
+
+        .SocialMediaHandler a {
+            margin-right: 0;
+        }
+
+    .breadcrumbSection {
+        padding: 80px 0 !important;
+    }
+
+        .breadcrumbSection h1 {
+            font-size: 26px;
+        }
+
+    .leftbgBlog {
+        min-height: 500px;
+    }
+    .whatsappclass {
+        bottom: 60px;
+        right: 5px;
+    }
+    .whatsappclass a img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .SliderContainer .carousel-caption {
+        display: none
+    }
+
+    .wave2 {
+        max-height: 100px;
+    }
+
+    .testimonial-container {
+        height: 600px !important;
+    }
+
+    .fixedwhatapp {
+        width: 230px;
+        height: 45px;
+    }
+
+        .fixedwhatapp a span {
+            width: 45px;
+            height: 45px;
+        }
+
+        .fixedwhatapp:hover {
+            right: -187px;
+        }
+
+    .VisonLeftText {
+        margin-top: 30px;
+    }
+
+    .lableArea button {
+        margin-bottom: 15px !important;
+    }
+
+    .cardDetails p {
+        white-space: normal;
+        width: auto;
+    }
+
+
+    .CookieSection {
+        width: 300px;
+        padding: 15px;
+        left: 10px
+    }
+
+        .CookieSection .butnSecton .blackBtn, .CookieSection .butnSecton .whiteBtn {
+            padding: 10px 10px;
+        }
+
+        .CookieSection .butnSecton .blackBtn {
+            margin-bottom: 10px;
+        }
+
+
+    .section-gap {
+        padding: 50px 0;
+    }
+
+    .ShineImage img {
+        max-height: max-content !important;
+        min-height: 280px !important;
+    }
+
+    .section-gap1 {
+        padding: 0px 0 50px 0;
+    }
+
+    .BlogBox {
+        margin-bottom: 50px;
+    }
+
+    .headingBar h3 {
+        font-size: 24px;
+    }
+
+    #AboutSet .col-md-12 p {
+        width: 100%;
+        margin-right: 15px;
+    }
+
+    .abt-images img {
+        margin-bottom: 20px;
+        max-height: max-content !important;
+    }
+
+    .abt-images .col-md-4:nth-child(2) img {
+        margin-top: 0;
+    }
+
+    .BoxProcess {
+        width: 50%;
+    }
+
+        .BoxProcess p {
+            font-size: 16px;
+        }
+
+        .BoxProcess h5 {
+            font-size: 26px;
+        }
+
+        .BoxProcess:before {
+            display: none
+        }
+
+    .BoxProcess {
+        margin-bottom: 20px
+    }
+
+    .socialCard {
+        box-shadow: none;
+    }
+
+
+    .contactForm {
+        margin-top: 20px;
+    }
+
+    .FAQSection .accordion .card {
+        padding: 10px 0
+    }
+
+    .addressContainer .addressBox {
+        display: block;
+    }
+
+    .contactForm input, .contactForm textarea.form-control {
+        font-size: 16px;
+    }
+
+    .butnSecton .blackBtn {
+        min-width: fit-content;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .leftbgBlog {
+        min-height: 650px;
+    }
+}
+
+@media (max-width: 991px) {
+    .SliderContainer .carousel-item img {
+        height: 750px;
+    }
+
+    .testimonials-boxes {
+        width: 100%;
+        position: inherit;
+        left: 0;
+    }
+
+    .testimonials-left {
+        width: 100% !important;
+        margin: 0;
+    }
+
+    .testimonial-container {
+        width: 100%;
+        height: 460px;
+        position: inherit;
+        overflow: hidden;
+    }
+
+    .setcontent {
+        padding-right: 15px;
+    }
+
+    .setcontent1 {
+        margin-top: 30px;
+    }
+
+    .breadcrumbSection {
+        padding: 100px 0;
+    }
+
+        .breadcrumbSection h1 {
+            font-size: 26px;
+        }
+
+    .FAQSection .accordion .card:hover {
+        transform: translateX(0px)
+    }
+
+    .FAQSection .accordion .card .card-header h2 {
+        font-size: 16px;
+    }
+
+    .SliderContainer .carousel-indicators li {
+        display: block;
+    }
+
+    .ManiHeader {
+        position: inherit;
+        width: 100%;
+        border-radius: 0;
+    }
+
+        .ManiHeader.fixed {
+            border-radius: 0 0 20px 20px;
+        }
+
+    /*.SliderContainer .carousel-item img {
+        min-height: 600px;
+    }*/
+
+    .navbar-nav {
+        margin-left: 0px;
+    }
+
+    .NavLogo img {
+        max-height: 70px;
+        width: auto;
+        padding: 0;
+    }
+
+    #tr2 {
+        margin-left: 0px;
+    }
+
+    .ManiHeader #navbarSupportedContent {
+        margin-top: 10px;
+        border-top: 1px solid #e5e5e5;
+    }
+
+    .NavLogo::before, .NavLogo::after {
+        display: none
+    }
+
+    .ManiHeader .navbar-toggler {
+        background: #082733;
+        /*padding: 10px 20px;*/
+        height: 40px;
+        width: 40px;
+    }
+
+        .ManiHeader .navbar-toggler i {
+            color: #fff;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+    .QualityBox {
+        margin-bottom: 20px;
+    }
+
+    .productCard {
+        margin-bottom: 30px;
+    }
+
+    .productSection .row {
+        justify-content: center;
+    }
+
+    .headingBar h3 {
+        margin-bottom: 10px;
+        font-size: 26px;
+    }
+
+    .aboutRight {
+        margin: 50px 15px;
+    }
+
+    .BannerSection {
+        padding: 30px 15px;
+    }
+
+    .BannerSectionRight {
+        padding: 50px 0px;
+    }
+
+    .LatestProductSection .butnSecton,
+    .BlogSection .butnSecton {
+        text-align: left;
+    }
+
+    .Fstfoot {
+        margin-bottom: 50px;
+    }
+
+    .socialCard {
+        margin: 0 0px 30px 0;
+    }
+
+    .pull-Right p,
+    .pull-Right p a,
+    .Pull-Left p {
+        text-align: center;
+    }
+
+    .comingSoon img {
+        max-height: 350px;
+    }
+
+    .marginBottom50 {
+        margin-bottom: 25px;
+    }
+
+    .visionLeft {
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    .filterBTN {
+        opacity: 1;
+    }
+
+    /* #setCategory {
+        display: none;
+    }*/
+
+    .productSort .nav-pills .nav-link {
+        padding: 5px 10px;
+        margin-bottom: 0;
+    }
+
+        .productSort .nav-pills .nav-link:last-child {
+            margin-bottom: 15px;
+        }
+
+    .productSort h4 {
+        margin-bottom: 0px;
+    }
+
+    .cursor-ball, .cursor-outline, .logoSet {
+        display: none;
+    }
+
+    .cardDetails {
+        width: 100%;
+    }
+
+    .cardDetails {
+        position: inherit;
+        background: #142934;
+    }
+
+    .productCard img {
+        max-height: max-content;
+        min-height: auto;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-gap {
+        padding: 70px 0;
+    }
+
+    .BoxProcess {
+        width: 33.33%;
+    }
+
+        .BoxProcess h5 {
+            font-size: 24px;
+        }
+
+        .BoxProcess p {
+            font-size: 15px;
+        }
+
+    .BoxProcess {
+        margin-bottom: 50px
+    }
+
+    .SliderContainer .carousel-caption h3 {
+        font-size: 26px;
+    }
+
+    .SliderContainer .carousel-caption p {
+        font-size: 28px;
+    }
+
+    .ShineImage img {
+        max-height: 400px;
+        min-height: 400px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .productSort {
+        position: sticky;
+        top: 120px;
+    }
+
+    .ManiHeader {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+        .ManiHeader .navbar {
+            padding: 10px 0;
+        }
+
+    .socialCard a {
+        font-size: 16px;
+    }
+
+    .Fstfoot p {
+        font-size: 16px;
+    }
+
+    .aboutRight {
+        margin: 0 70px;
+    }
+
+    .cardDetails {
+        width: 100%;
+    }
+
+    .socialCard {
+        margin: 0px;
+    }
+
+    .headingBar h3 {
+        font-size: 24px;
+    }
+
+    .navbar-nav {
+        margin-left: 150px;
+    }
+
+    .aboutusHome {
+        padding: 50px 0;
+    }
+
+    .ShineImage img {
+        max-height: max-content;
+        min-height: auto;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .WrapperContainer {
+        max-width: 1250px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1399px) {
+    .testimonials-boxes {
+        left: 0;
+    }
+}
+
+@media (max-width: 1399px) {
+    .testimonials-right {
+        display: none;
+        margin-top: 0;
+    }
+
+    .testimonials-left {
+        width: 60%;
+        flex-wrap: wrap;
+    }
+}

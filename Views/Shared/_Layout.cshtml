@@ -1,0 +1,341 @@
+﻿@{
+	var canonicalUrl = $"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>@ViewData["Title"]</title>
+	<!-- SEO Meta Tags -->
+	<meta name="keywords" content="@ViewBag.MetaKeywords" />
+	<meta name="description" content="@ViewBag.MetaDescription" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="google-site-verification" content="0_UTBz_CuPeGfyK0297mUCyROR5eLFkkghoqkBmTYZA" />
+	<!-- Open Graph Meta Tags for Social Media Sharing -->
+	<meta property="og:title" content="@ViewData["Title"]" />
+	<meta property="og:description" content="@ViewBag.MetaDescription" />
+	<meta property="og:image" content="https://www.rjkapdaaz.com/images/Rjkapdaazlogo.png" />
+	<meta property="og:url" content="https://www.rjkapdaaz.com" />
+	<meta property="og:type" content="website" />
+	<!-- Canonical URL -->
+	<link rel="canonical" href="@Html.Raw(canonicalUrl)" />
+	<!-- CSS Files -->
+	<link href="~/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="~/css/style.css" rel="stylesheet" />
+	<link href="~/css/responsive.css" rel="stylesheet" />
+	<link href="~/css/owl.carousel.min.css" rel="stylesheet" />
+	<link rel="icon" type="image/png" sizes="32x32" href="~/images/favicon32.png">
+	<link href="~/css/sitefonts.css" rel="stylesheet" />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8W92DYCV76"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-8W92DYCV76');
+	</script>
+	<meta name="google-site-verification" content="0_UTBz_CuPeGfyK0297mUCyROR5eLFkkghoqkBmTYZA" />
+	<!-- Structured Data for Local Business -->
+	<script type="application/ld+json">
+		{
+		  "@@context": "https://schema.org",
+		  "@@type": "LocalBusiness",
+		  "name": "RJ Kapdaaz",
+		  "image": "https://www.rjkapdaaz.com/images/Rjkapdaazlogo.png",
+		  "address": {
+			"@@type": "PostalAddress",
+			"streetAddress": "Udhna - Magdalla Road, Bhatar",
+			"addressLocality": "Surat",
+			"addressRegion": "Gujarat",
+			"postalCode": "395007",
+			"addressCountry": "IN"
+		  },
+		  "telephone": "+91 92279 06693",
+		  "url": "https://www.rjkapdaaz.com/"
+		}
+	</script>
+</head>
+<body>
+
+	<div class="" style="visibility:hidden;" id="topcasual"></div>
+	<header class="ManiHeader">
+		<div class="">
+			<div class="container-fluid">
+				<nav class="navbar navbar-expand-lg">
+					<a class="navbar-brand NavLogo logoSetScreen" href="@Url.Action("index","Home")">
+						<img src="~/images/Rjkapdaazlogo.png" class="img-fluid" alt="RJ Kapdaaz Logo" width="135" height="80" />
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="fas fa-bars"></i>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="@Url.Action("index","Home")">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="@Url.Action("about","Home")">About</a>
+							</li>
+							@* <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("blog","Home")">Blogs</a>
+                            </li> *@
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="javascript:void(0)">Products <i class="fas fa-angle-down"></i></a>
+								<ul class="SubMenyBox">
+									<li><a class="nav-link" href="@Url.Action("linen","Home")">Linen</a></li>
+									<li><a class="nav-link" href="@Url.Action("uniform","Home")">Uniforms</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="@Url.Action("contact","Home")">Contact Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="@Url.Action("carrer","Home")">Career</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href="javascript:void(0)">More <i class="fas fa-angle-down"></i></a>
+								<ul class="SubMenyBox">
+									<li><a class="nav-link" href="@Url.Action("testimonial","Home")">Testimonials</a></li>
+									<li><a class="nav-link" href="@Url.Action("export","Home")">Export</a></li>
+								</ul>
+							</li>
+							<li>
+								<div class="translateBar">
+									<div id="google_translate_wrapper">
+										<i class="fas fa-language"></i>
+										<div id="google_translate_element"></div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div>
+		@RenderBody()
+	</div>
+	<footer class="footerSection">
+		@*  <h3 class="footerLable">RJ Kapdaaz</h3> *@
+		<div class="WrapperContainer">
+			<div class="container-fluid" id="setFooter">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="Fstfoot">
+							<div class="dividerClass"></div>
+							<div class="headingBar">
+								<h3>We’re Just a Message Away!</h3>
+							</div>
+							<p>
+								We’re always here to assist you with any questions, feedback, or inquiries – feel free to reach out, and we’ll get back to you as soon as possible!
+							</p>
+							<div class="SocialMediaHandler">
+								<a href="https://www.facebook.com/" target="_blank" class="fb"><i class="fab fa-facebook-f"></i></a>
+								<a href="https://www.instagram.com/rjkapdaaz/" target="_blank" class="ig"><i class="fab fa-instagram"></i></a>
+								<a href="https://www.linkedin.com/" target="_blank" class="linkdn"><i class="fab fa-linkedin-in"></i></a>
+								<a href="https://search.google.com/local/writereview?placeid=ChIJqz4rEnpP4DsRXOtgT113LpE" target="_blank" class="gsearch"><i class="fab fa-google"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="socialCard">
+							<div class="socialIcon">
+								<i class="far fa-envelope"></i>
+							</div>
+							<a href="mailto:sales@rjkapdaaz.com">sales@rjkapdaaz.com</a>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="socialCard">
+							<div class="socialIcon">
+								<i class="fas fa-map-marker-alt"></i><h5>Head Office</h5>
+							</div>
+							<a href="https://maps.app.goo.gl/kGbQG2Z14rdw2AX2A" target="_blank">A-19, Sainath Industrial Society, Bhatar, Udhna - Magdalla Road, Surat - 395007</a>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="socialCard">
+							<div class="socialIcon">
+								<i class="fas fa-phone-alt"></i>
+
+							</div>
+							<a href="tel:+919106793771">+91 91067 93771</a>
+							<a href="tel:+919227906693">+91 92279 06693</a>
+							<a href="tel:+919737339997">+91 97373 39997</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid" id="SubFooter">
+				<div class="row no-gutters">
+					<div class="col-lg-6">
+						<div class="Pull-Left">
+							<p>RJ Kapdaaz © <span id="footerDate"></span>. All Rights Reserved.</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="pull-Right">
+							<p>Designed by <a href="https://www.mitsolutions.in/" target="_blank">M iT Solutions</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		@* <div class="makeindia">
+        <img src="~/images/makeIndia.png" alt="Make In India Logo" class="img-fluid" />
+        </div> *@
+	</footer>
+
+	<div class="BackToTop"><a href="#topcasual"><i class="fas fa-long-arrow-alt-up"></i> </a></div>
+
+	@*  <a href="https://wa.me/+919106793771" id="WAButton" class="pulse" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    </a> *@
+
+	@*  <div class="fixedwhatapp">
+        <a class="phonenumber" href="https://wa.me/+919106793771" target="_blank" rel="nofollow">
+            <div class="whatsapp-image">
+                <img src="~/images/icons/whatsapp.png" />
+            </div>
+            <p>
+                WhatsApp<br>
+                +91 91067 93771
+            </p>
+        </a>
+    </div> *@
+
+	<div class="whatsappclass">
+		<a class="phoneNumber" href="https://wa.me/+919106793771" target="_blank"><img src="~/images/icons/whatsapp.png" /></a>
+	</div>
+
+	<div class="MyLoader" id="lodeerloder">
+		<div class="loader3">
+			<img src="~/images/fav512.png" class="img-fluid" alt="rj kapdaaz logo" width="53" height="70" />
+		</div>
+	</div>
+
+
+	<div id="progress-bar"></div>
+
+	<script src="~/js/jquery-3.5.1.js"></script>
+	<script src="~/js/bootstrap.min.js"></script>
+	<script src="~/js/fontawesome.min.js"></script>
+	<script src="~/js/owl.carousel.min.js"></script>
+	<script src="~/js/extra.js"></script>
+
+	<script>
+		$(document).ready(function () {
+
+			$(window).on('load', function () {
+				$('#lodeerloder').addClass('hidden'); // Add the 'hidden' class to trigger fadeout animation
+			});
+			setTimeout(function () {
+				$('#lodeerloder').addClass('hidden');
+			}, 3000);
+
+			//Add fixed Class in Header
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('.ManiHeader').addClass('fixed');
+				} else {
+					$('.ManiHeader').removeClass('fixed');
+				}
+			});
+
+			//Same Height jQuery
+			function setEqualHeight() {
+				var maxHeight = 0;
+
+				// Reset the height first to handle resizing
+				$('.socialCard').css('height', 'auto');
+
+				// Loop through each div to find the maximum height
+				$('.socialCard').each(function () {
+					var thisHeight = $(this).outerHeight();
+					if (thisHeight > maxHeight) {
+						maxHeight = thisHeight;
+					}
+				});
+
+				// Set each div to the maximum height
+				$('.socialCard').css('height', maxHeight + 'px');
+			}
+
+			// Initial call to set heights
+			setEqualHeight();
+
+			// Optional: Adjust heights on window resize for responsiveness
+			$(window).resize(function () {
+				setEqualHeight();
+			});
+
+			// Function to update the progress bar width
+			function updateProgressBar() {
+				const progressBar = document.getElementById('progress-bar');
+				const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+				const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+				const progress = (scrollTop / scrollHeight) * 100;
+				progressBar.style.width = progress + '%';
+			}
+
+			// Add the scroll event listener to the window
+			window.addEventListener('scroll', updateProgressBar);
+
+		});
+
+	</script>
+
+	<script>
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({
+				pageLanguage: "en",
+				includedLanguages: "en,ar,es,pt,fr,it",
+				autoDisplay: false
+			}, "google_translate_element");
+
+			setTimeout(function () {
+				// Remove extra Google Translate default text
+				var selectText = document.querySelector(".goog-te-gadget span");
+				if (selectText) {
+					selectText.style.display = "none";
+				}
+
+				// Remove Google Translate branding
+				var branding = document.querySelector(".goog-te-gadget-simple span");
+				if (branding) {
+					branding.remove();
+				}
+			}, 500);
+		}
+
+	</script>
+	<script src="~/js/translate.js"></script>
+
+	<script>
+		$(".container-fluid").each(function () {
+			// Cache the highest
+			var highestBox = 0;
+
+			// Select and loop the elements you want to equalise
+			$(".testimonial-data", this).each(function () {
+				// If this box is higher than the cached highest then store it
+				if ($(this).height() > highestBox) {
+					highestBox = $(this).height();
+				}
+			});
+
+			// Set the height of all those children to whichever was highest
+			$(".testimonial-data", this).height(highestBox);
+		});
+	</script>
+
+
+	@* @await RenderSectionAsync("Scripts", required: false) *@
+</body>
+</html>

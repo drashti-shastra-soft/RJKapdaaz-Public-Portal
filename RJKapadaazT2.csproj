@@ -1,0 +1,94 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\EmailController.cs" />
+    <Compile Remove="Controllers\ErrorController.cs" />
+    <Compile Remove="Controllers\Global.asax.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\locomotivescroll.min.css" />
+    <Content Remove="wwwroot\css\site.css" />
+    <Content Remove="wwwroot\feedback.php" />
+    <Content Remove="wwwroot\images\3.jpg" />
+    <Content Remove="wwwroot\images\about2.jpg" />
+    <Content Remove="wwwroot\images\about5.jpg" />
+    <Content Remove="wwwroot\images\approns.jpg" />
+    <Content Remove="wwwroot\images\appronsjpg.jpg" />
+    <Content Remove="wwwroot\images\BathTowels.jpg" />
+    <Content Remove="wwwroot\images\bed2.jpg" />
+    <Content Remove="wwwroot\images\bed4.jpg" />
+    <Content Remove="wwwroot\images\blog1.png" />
+    <Content Remove="wwwroot\images\blog2.png" />
+    <Content Remove="wwwroot\images\blog3.png" />
+    <Content Remove="wwwroot\images\blog4.png" />
+    <Content Remove="wwwroot\images\breadcrumb.jpg" />
+    <Content Remove="wwwroot\images\breadcrumb1.jpg" />
+    <Content Remove="wwwroot\images\chef.jpg" />
+    <Content Remove="wwwroot\images\ChefCoat.jpeg" />
+    <Content Remove="wwwroot\images\Corporatebreadcrumb.jpg" />
+    <Content Remove="wwwroot\images\DrTeam.jpg" />
+    <Content Remove="wwwroot\images\HotelUniform.jpg" />
+    <Content Remove="wwwroot\images\Image.jpg" />
+    <Content Remove="wwwroot\images\kurtaUniform.jpg" />
+    <Content Remove="wwwroot\images\layers.png" />
+    <Content Remove="wwwroot\images\Linenbread2.jpg" />
+    <Content Remove="wwwroot\images\linenHome.jpg" />
+    <Content Remove="wwwroot\images\LinenHome2.jpeg" />
+    <Content Remove="wwwroot\images\LinenImages\DALL·E 2024-10-23 13.58.14 - A hospital bed neatly made with a smooth green VAT dyed bedsheet. The bed is set in a clean and sterile hospital room with simple, functional m.webp - Shortc.lnk" />
+    <Content Remove="wwwroot\images\LinenPage.jpg" />
+    <Content Remove="wwwroot\images\mainslider2.jpeg" />
+    <Content Remove="wwwroot\images\makeIndia.png" />
+    <Content Remove="wwwroot\images\Mattress1.jpg" />
+    <Content Remove="wwwroot\images\offers.jpg" />
+    <Content Remove="wwwroot\images\pixel0.jpg" />
+    <Content Remove="wwwroot\images\Pixel1.jpg" />
+    <Content Remove="wwwroot\images\pixel4.jpg" />
+    <Content Remove="wwwroot\images\pixel5.jpg" />
+    <Content Remove="wwwroot\images\RJSlider1.jpg" />
+    <Content Remove="wwwroot\images\RJSlider2.jpg" />
+    <Content Remove="wwwroot\images\slider1.jpg" />
+    <Content Remove="wwwroot\images\slider2.jpg" />
+    <Content Remove="wwwroot\images\thsirt.jpg" />
+    <Content Remove="wwwroot\images\tshirt.jpg" />
+    <Content Remove="wwwroot\images\UformFront.jpg" />
+    <Content Remove="wwwroot\images\uniformBredcrumb.jpg" />
+    <Content Remove="wwwroot\images\uniformcategroy1.jpeg" />
+    <Content Remove="wwwroot\images\uniformcategroy1.jpg" />
+    <Content Remove="wwwroot\images\uniformFront.jpg" />
+    <Content Remove="wwwroot\images\uniforms.jpg" />
+    <Content Remove="wwwroot\images\Whats.mp4" />
+    <Content Remove="wwwroot\js\locomotivescroll.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Home\feedback.php" />
+    <None Remove="Views\Home\uniformCopy.html" />
+    <None Remove="Views\Shared\feedback.php" />
+    <None Remove="Views\Shared\_Layout.cshtml.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Controllers\ErrorController.cs" />
+    <None Include="Controllers\EmailController.cs" />
+    <None Include="Controllers\Global.asax.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Home\export.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Views\Home\linen.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
